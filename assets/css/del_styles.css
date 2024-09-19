@@ -1,0 +1,60 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+}
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+ #canadaMap {
+ 	width: 60vw;
+ 	margin: 0 auto;
+ 	display: block;
+ 	padding-top:10vh;
+ }
+svg {
+	fill: lightgrey;
+}
+
+g:hover{ 
+	fill:#bdbdbd;
+	cursor: pointer;
+ }
+.province_text{
+	font-size:11px;
+	fill:black;}
+.st2{fill:none;}
+.st3{font-family:'Lato';}
+.st5{fill:#FFFFFF;}
+.st6{fill:black;}
+
+/*ADDED*/
+.map_city .map_circle {
+    fill: gray;
+    stroke: transparent;
+    fill-opacity: 0;
+    stroke-width: 1.5px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
