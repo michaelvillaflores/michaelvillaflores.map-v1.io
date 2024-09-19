@@ -44,6 +44,14 @@
             position: sticky;
         }
 
+        .MapTitle, .AboutUsTitle {
+            color:#000;
+        }
+
+        .VideoTitle {
+            color: white;
+        }
+
         .MapTitle,
         .VideoTitle,
         .AboutUsTitle,
@@ -1113,13 +1121,13 @@
         }
 
             a:hover {
-                background-color: #ddd;
-                color: black;
+                background-color: #e81820;
+                color: #fff;
             }
 
         .previous {
             background-color: #f1f1f1;
-            color: black;
+            color: #000;
         }
 
         .next {
@@ -1302,6 +1310,312 @@
 		        box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
 		    }
 		}
+		
+		
+		
+		
+		/* State - Image Carousel */
+.carousel {
+  height: 360px;
+  width: 460px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  padding: 0;
+  list-style: none;
+/**
+  * Where the magic happens
+  */
+/**
+    * Control element - right/left arrows
+  */
+/**
+    * Element for holding slide indicators
+  */
+/**
+    * Indicator for indicating active slide
+  */
+/**
+    * Create rules for when slides are contained within a track
+  */
+}
+.carousel__controls,
+.carousel__activator {
+  display: none;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+  transform: translateX(0%);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+  transform: translateX(-100%);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__track {
+  transform: translateX(-200%);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__controls:nth-of-type(3) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(3) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__track {
+  transform: translateX(-300%);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__slide:nth-of-type(4) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__controls:nth-of-type(4) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(4):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(4) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__track {
+  transform: translateX(-400%);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__slide:nth-of-type(5) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__controls:nth-of-type(5) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(5):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(5) {
+  opacity: 1;
+}
+.carousel__control {
+  height: 30px;
+  width: 30px;
+  margin-top: -15px;
+  top: 50%;
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  border-width: 5px 5px 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  opacity: 0.35;
+  outline: 0;
+  z-index: 3;
+}
+.carousel__control:hover {
+  opacity: 1;
+}
+.carousel__control--backward {
+  left: 10px;
+  transform: rotate(-135deg);
+  visibility: hidden;
+}
+.carousel__control--forward {
+  right: 10px;
+  transform: rotate(45deg);
+  opacity: 0;
+  visibility: hidden;
+}
+.carousel__indicators {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+}
+.carousel__indicator {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  display: inline-block;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.35;
+  margin: 0 2.5px 0 2.5px;
+}
+.carousel__indicator:hover {
+  opacity: 0.75;
+}
+.carousel__track {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.5s ease 0s;
+}
+.carousel__track .carousel__slide {
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.carousel__track .carousel__slide:nth-of-type(1) {
+  transform: translateX(0%);
+}
+.carousel__track .carousel__slide:nth-of-type(2) {
+  transform: translateX(100%);
+}
+.carousel__track .carousel__slide:nth-of-type(3) {
+  transform: translateX(200%);
+}
+.carousel__track .carousel__slide:nth-of-type(4) {
+  transform: translateX(300%);
+}
+.carousel__track .carousel__slide:nth-of-type(5) {
+  transform: translateX(400%);
+}
+.carousel--scale .carousel__slide {
+  transform: scale(0);
+}
+.carousel__slide {
+  height: 100%;
+  position: absolute;
+  overflow-y: auto;
+  opacity: 0;
+}
+		
+.carousel-container {
+  display: inline-block;
+}
+.my-carousel {
+  /* border-radius: 5px; */
+  /* margin: 30px; */
+}
+.carousel__slide {
+  overflow: hidden;
+}
+.carousel--thumb .carousel__indicator {
+  height: 30px;
+  width: 30px;
+}
+h1 {
+  font-size: 50px;
+  line-height: 50px;
+  color: #fafafa;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin-top: -25px;
+}
+h2,
+h3 {
+  color: #fafafa;
+}
+h3 {
+  font-size: 50px;
+}
+.carousel__indicator {
+  background-color: #fafafa;
+}
+
+
+
+
+
+
+
+.carousel__activator:nth-of-type(1):checked ~ .carousel__track {
+  transform: translateX(0%);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__slide:nth-of-type(1) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__controls:nth-of-type(1) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(1):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(1) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__track {
+  transform: translateX(-100%);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__slide:nth-of-type(2) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__controls:nth-of-type(2) {
+  display: block;
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(2):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(2) {
+  opacity: 1;
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__track {
+  transform: translateX(-200%);
+}
+.carousel__activator:nth-of-type(3):checked ~ .carousel__slide:nth-of-type(3) {
+  transition: opacity 0.5s, transform 0.5s;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: scale(1);
+}
+
+		
+		
+		
+		
     </style>
 
 
@@ -1321,7 +1635,13 @@
                 <div class="MapContent">
                     <div class="map-img">
                         <div class="image-1-parent">
-                            <img id="photo-frame" class="image-1-icon" loading="lazy" alt="" src="assets/images/pic_Nunavut.jpg" />
+                            <img id="photo-frame" class="image-1-icon" loading="lazy" alt="" src="assets/images/pic_Nunavut.jpg" style="display:none" />
+                            
+							<div class="carousel-container">
+							  <div id="image_carousel" class="carousel my-carousel carousel--translate">
+							  </div>
+							</div>
+
 
                             <div class="nunavut-lorem-ipsum-container">
                                 <p id="mapinfo_label" class="nunavut">Nunavut</p>
@@ -1340,7 +1660,7 @@
                             <svg version="1.1" id="canadaMap" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                  viewBox="0 0 694.4 685" style="enable-background:new 0 0 694.4 685;" xml:space="preserve">
               
-                            <g id="NFL_L" onclick="show_location('nfl');">
+                            <g id="NFL_L" onclick="return show_location('nfl');">
                             <path class="province_path" d="M629.7,480c-2.4,0.3-3.1-2.5-5-3c0,0,0,0,0,0c0.1-0.3,0.1-0.7-0.1-1c-1.1-2.6-2.8-1.3-4.5-0.7
                       c-14.3,5.3-28.7,10.5-43,15.7c-2.4,0.9-4.8,1.4-7.3,0.5c-5.7-1.9-6-1.9-6,4.4c0,3.8-1.8,4.4-4.9,4.1c-2.5-0.3-4.5-2.5-7.1-2
                       c-3.9,0.7-5.5-1.2-5.8-4.7c-0.3-2.7-1.4-4-4.3-2.8c-3.2,1.3-4.3-0.1-4-3.3c0.2-2.2-0.1-4-2.4-5.5c-8.6-5.5-9-9.9-2.3-17.9
@@ -1365,7 +1685,7 @@
                             <rect class="st6" x="616.4" y="427.2" width="3.7" height="35.8" />
                             <circle class="st5" cx="616" cy="462.9" r="4" />
                     </g>
-                            <g id="BC" onclick="show_location('bc');">
+                            <g id="BC" onclick="return show_location('bc');">
                             <path class="province_path" d="M128.9,541c-1.2,1.8-2.6,0.6-4,0.2c-17.8-4.8-34.9-11.8-52.2-18.2c-1.4-0.5-2.7-1.3-4.2-1.6
                       c-8.9-1.9-15.3-6.8-19.3-14.9c-1.3-2.7-4.4-4.2-4.5-7.5c-0.8-3.5-0.4-7.6-5-9l0,0c-0.3-0.3-0.7-0.7-1-1l0,0c0.1-0.9-0.2-1.6-1-2
                       l0,0c-0.4-1-0.8-2-1.2-3.1c1-2.9-0.9-4.4-3-5.5c-3.2-1.6-4.2-4-3.8-7.3c0.5-4.5-0.9-8.9,2.2-13.4c1.5-2.2,0.3-6.7-2.1-9.6
@@ -1382,7 +1702,7 @@
                             <text transform="matrix(1 0 0 1 30.8452 427.5611)" class="province_text">British Colombia</text>
                             <circle class="st5" cx="75" cy="445" r="4" />
                   </g>
-                            <g id="Nova_Scotia" onclick="show_location('ns');">
+                            <g id="Nova_Scotia" onclick="return show_location('ns');">
                             <path class="province_path" d="M590.9,580.4c0.8-1.2,1.7-2.4,2.5-3.6c6.3-1.3,12.8-1.2,18.9-3.7c2.4-0.9,5.3,0,7.7,1.3
                       c0.1,0.2,0.3,0.3,0.5,0.4c3.4,3.9-0.6,6.1-2.5,7.8c-5.7,5.2-11.2,10.5-17.8,14.6c-1.4,0.9-1.9,2.3-2.2,3.7
                       c-1.2,4.7-3.9,8.4-7.3,11.6c-3.2,3-6.8,2.9-9.2-0.7c-2.3-3.6-3.7-7.3-0.8-11.6c3.4-5.1,7.1-9.9,12.3-13.3c0.8-0.1,1.6-0.2,1.9-1.1
@@ -1395,7 +1715,7 @@
                             <rect class="st6" x="601.4" y="589.2" transform="matrix(-1.836970e-16 1 -1 -1.836970e-16 1206.6833 0.7754)" width="3" height="29" />
                             <circle class="st5" cx="588.4" cy="603" r="4" />
                   </g>
-                            <g id="Quebec" onclick="show_location('quebec');">
+                            <g id="Quebec" onclick="return show_location('quebec');">
                             <path class="province_path" d="M624.7,476.9c2.7,4.5,0.5,7.1-3.2,9.8c-3.5,2.5-5.9,6-7.1,10.5c-2.7,10.3-10.6,15-20.2,17.7
                       c-11.8,3.4-23.6,6.6-35.1,11.1c-4.8,1.9-7.7,4.7-8.5,9.9c-0.5,3.8-1.4,7.2-5.9,8.8c-2.6,0.9-3.8,4-5.2,6.5
                       c-4.7,8.2-7.9,17.1-11.9,25.6c-0.8,0.4-1,1.1-1.1,1.9c-1.3,0.1-1.8,0.9-1.9,2.1c-0.1,0.2-0.3,0.4-0.4,0.6c0.2-0.1,0.4-0.3,0.6-0.4
@@ -1422,7 +1742,7 @@
                             <text transform="matrix(1 0 0 1 471.6407 492.2536)" class="province_text">Quebec</text>
                             <circle class="st5" cx="495" cy="510" r="4" />
                   </g>
-                            <g id="Ontario" onclick="show_location('ontario');">
+                            <g id="Ontario" onclick="return show_location('ontario');">
                             <path id="Ontario" class="province_path" d="M431.8,624.9c2.9,0.4,4,3.5,6.5,4.4c1.8,0.6,3.5,2.5,5.3,0.3c1.8-2.1,1.2-4.1,0-6.4
                       c-5.4-9.8-14.8-11.3-24.6-12.2c-3-0.3-6-0.1-9-0.1c-7.2-0.1-12.5-5.6-13.7-12.7c-0.7-3.9-2.3-7.8-7.1-9.3c-4.4-1.3-9.1-2.9-8.7-9.1
                       c0.1-1.7-1.5-2-2.9-1.9c-3.7,0.3-7.3-0.1-10.5-2.2c-2.2-1.4-4.2-0.3-4.9,1.7c-1.9,5.2-7.1,6.8-10.8,9.8c-2.9,2.4-7.3-0.5-11.1-0.6
@@ -1443,7 +1763,7 @@
                             <text transform="matrix(1 0 0 1 352.8483 519.7108)" class="province_text">Ontario</text>
                             <circle class="st5" cx="375" cy="535" r="4" />
                   </g>
-                            <g id="Yukon" onclick="show_location('yukon');">
+                            <g id="Yukon" onclick="return show_location('yukon');">
                             <path id="Yukon" class="province_path" d="M81,184.1c4.6-0.7,6.9,1.2,8,5.8c1.1,4.9,2.1,10,5.9,13.8c0.9,0.9,1,2,0.9,3.2
                       c-5.8,6.2-8.4,14.2-11.9,21.6c-2.1,4.3-1,6.6,2.3,9c6.6,4.8,6.6,4.9,3.3,12c-1.6,3.5-2.6,6.6,0.5,10.1c1.9,2.2,1.8,5-1.1,7.4
                       c-3.2,2.6-5.4,6.6-4,10.4c4,10.6,6,20.8,2.6,32.2c-1.5,5-2.2,10.7,1.1,16.7c2.7,4.8,6.4,10.6,3.5,17.3c-1.2,2.7,0.2,5.1,3.1,6.5
@@ -1454,7 +1774,7 @@
                             <text transform="matrix(1 0 0 1 40.2843 291.1143)" class="province_text">Yukon</text>
                             <circle class="st5" cx="60" cy="308" r="4" />
                   </g>
-                            <g id="NWT" onclick="show_location('nwt');">
+                            <g id="NWT" onclick="return show_location('nt');">
                             <path class="province_path" d="M96.7,207.9c1.8,0.1,3.7,1.9,4.3-2.1c0.6-5,5.8-2.1,8.8-3.4c2.2-1,3,1.1,3.2,3.2c0.2,2.9,2,2.6,3.9,1.8
                       c5.5-2.4,11.5-1.5,17.2-2.1c3-0.3,7.6-0.5,7.4,5.5c-0.1,2,2.6,0.9,4.1,0.4c5.7-2,7.1-1,7.2,5c0,0.3,0,0.7,0,1
                       c0.5,3-1.6,7.3,1.3,8.9c3.1,1.6,4.4-3.1,6.7-4.6c0.8-0.5,1.5-1.6,2.6-1.1c1.6,0.8,1.3,2.5,1.4,4c0.1,5.2,0.1,5.2,5.3,4.6
@@ -1499,7 +1819,7 @@
                             <text transform="matrix(1 0 0 1 85 323.8538)" class="province_text">North West Territories</text>
                             <circle class="st5" cx="160" cy="340" r="4" />
                   </g>
-                            <g id="Nunavut" onclick="show_location('nunavut');">
+                            <g id="Nunavut" onclick="return show_location('nunavut');">
                             <path class="province_path" d="M182.8,242.7c0-0.4,1-1.6,0.9-1.9c0,0,2.5,1.6,4,2.7c3.3,2.6,4.8,6.9,8.6,8.9c1.8,1,3.3,2.3,5.8,2.1
                       c3.5-0.3,10.2,8.8,9.5,12.1c-0.6,2.7-3.1,2-4.8,2.8c-1.4,0.6-3.7,0.3-3.8,2.5c-0.1,2.1,1.6,3.3,3.4,3.9c6.7,2.1,13.4,5.5,20.7,2.9
                       c2.3-0.8,3.6-0.4,5,1.7c2.5,3.7,5.3,7.2,8.1,10.8c1.1-0.4,0.7-1.4,0.6-2c-0.8-4.4,1.1-6.8,5.2-8.2c1.5-0.5,3.2-1.1,3.9-2.8
@@ -1621,7 +1941,7 @@
                             <text transform="matrix(1 0 0 1 288.0634 337.7688)" class="province_text">Nunavut</text>
                             <circle class="st5" cx="315" cy="355" r="4" />
                   </g>
-                            <g id="PEI" onclick="show_location('pei');">
+                            <g id="PEI" onclick="return show_location('pei');">
                             <path id="PEI" class="province_path" d="M599.6,573c-3.5,0.5-7.5-1.7-11.7-2.1c-1.1-0.1-1.9-0.6-2-1.8c0-1.7,0.7-3.2,2-4.4
                       c0.7-0.7,1.6-0.5,2.2,0.2c3.8,4.6,8.3,1.8,12.7,1.3c1.5-0.2,3.2-2,4.6-0.4c1.3,1.6-0.4,3.4-0.6,5.2c-0.2,2.4-2.1,2.1-3.8,2.1
                       C602.1,573,601.3,573,599.6,573z" />
@@ -1630,7 +1950,7 @@
                             <rect class="st6" x="599.1" y="557.6" width="1.2" height="11.8" />
                             <circle class="st5" cx="599.7" cy="569.5" r="4" />
                   </g>
-                            <g id="New_Brunswick" onclick="show_location('nb');">
+                            <g id="New_Brunswick" onclick="return show_location('nb');">
                             <path id="New_x5F_Brunswick" class="province_path" d="M565.8,556.8c3.7,0.5,7.1,0.1,10.3-2.2c1-0.8,2.8-1.8,4.1-0.8c1.4,1-0.1,2.4-0.3,3.6
                       c-1.2,7.5,4,15.1,11.3,16.5c2,0.4,2.5,1.2,2.2,2.9c-0.8,1.2-1.7,2.4-2.5,3.6c-2.3,0.4-3.1,2.3-4.1,4c-3.3,5.9-9.1,9-14.4,12.6
                       c-2.8,1.9-5.5,0.7-7.5-1.6c-4.2-4.9-8.3-10-8.6-16.8c-0.3-6.1-4-8.2-9.4-8.7c0.3-2.3-1.3-6.4,1.2-6.5
@@ -1640,7 +1960,7 @@
                             <rect class="st6" x="568.2" y="583.6" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 1140.069 1203.0167)" width="3.7" height="35.8" />
                             <circle class="st5" cx="570" cy="583.6" r="4" />
                   </g>
-                            <g id="Manitoba" onclick="show_location('manitoba');">
+                            <g id="Manitoba" onclick="return show_location('manitoba');">
                             <path id="Manitoba" class="province_path" d="M299.7,560c-0.3,3-0.7,5.9-0.9,8.9c-0.2,2.8-2,3.2-4.2,3c-9.2-0.7-18.4-1.5-27.6-2.4
                       c-4.1-0.4-8.2-1.2-12.3-1.5c-7.9-0.5-7.9-0.4-8.2-8c0.7-8.3,1.6-16.5,2.1-24.8c1.5-21.3,2.5-42.7,4.3-64c0.6-6.9,0.4-13.9,1.6-20.8
                       c0.5-3.1,3.5-4.9,3.2-8.2c-1.1-9.7,2-18.9,2.9-28.4c0.1-1.2,0-2.8,2.2-2.4c2.9,0.5,5.9,0.7,8.9,1c12.4,0.9,24.6,3.6,37.1,3.6
@@ -1657,7 +1977,7 @@
                             <text transform="matrix(1 0 0 1 268.603 492.2541)" class="province_text">Manitoba</text>
                             <circle class="st5" cx="295" cy="510" r="4" />
                   </g>
-                            <g id="Sask" onclick="show_location('sask');">
+                            <g id="Sask" onclick="return show_location('sask');">
                             <path id="Sask" class="province_path" d="M244.7,560c-0.2,7.2-0.2,6.8-8.5,6.1c-22.5-2-44.2-8-66.2-12.6c-0.5-0.1-0.9-0.3-1.4-0.5
                       c0.2-2.3,0.1-4.7,0.6-6.9c3.3-13.7,7.2-27.3,10.2-41.1c6.2-28.7,13.8-57.1,20.3-85.7c1-4.4,2.9-5.9,7.4-5.4
                       c6.4,0.7,12.9-0.7,19.2,2.3c0.2-2.2-0.6-2.6-1.3-3c-5.9-3.9-13-5-19.4-7.7c-1.2-0.5-3.2,0.7-2.6-1.9c0.5-2.2,1.9-2.8,4.2-2.3
@@ -1668,7 +1988,7 @@
                             <text transform="matrix(1 0 0 1 207.7975 481.6658)" class="province_text">Sask</text>
                             <circle class="st5" cx="220" cy="500" r="4" />
                   </g>
-                            <g id="Alberta" onclick="show_location('alberta');">
+                            <g id="Alberta" onclick="return show_location('alberta');">
                             <path id="Alberta" class="province_path" d="M165.7,551.9c-10.9-1.9-21.6-5-32.2-8.3c-1.1-0.3-1.9-1.7-2.9-2.6c-1-3.4-1-6.7-0.3-10.3
                       c0.6-2.9,1.8-5.9,0.2-9.2c-4-8-7.8-16.2-11.3-24.4c-2.3-5.5-6.7-9.9-7.5-16.1c-0.5-4.1-2.5-7.5-5.3-10.5c-1-1.1-2.1-2.1-1.7-3.9
                       c1-4.3,1.5-8.8,3-13c8.5-23.4,16.8-46.9,25.1-70.3c1.1-3.2,2.5-3.6,5.5-2.5c19.4,6.9,39.2,12.5,59,18.1c3.1,0.9,3.6,2.6,3,5.1
@@ -1826,23 +2146,57 @@
         </footer>
     </div>
     <script type="text/javascript">
+    	let image_location = "assets/images/";
         let current_location_id = 0;
         let info_table =
             [
-                ['alberta', 'Alberta', 'pic_Alberta.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
-                ['bc', 'British Columbia', 'pic_BC.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
-                ['manitoba', 'Manitoba', 'pic_Manitoba.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
-                ['nb', 'New Brunswick', 'pic_NewBruswick.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
-                ['nfl', 'Newfoundland and Labrador', 'pic_NewfoundLand.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
-                ['nwt', 'Northwest Territories', 'pic_NT.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
-                ['ns', 'Nova Scotia', 'pic_NovaScotia.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
-                ['nunavut', 'Nunavut', 'pic_Nunavut.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
-                ['ontario', 'Ontario', 'pic_Ontario.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
-                ['pei', 'Prince Edward Island', 'pic_PEI.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
-                ['quebec', 'Quebec', 'pic_Quebec.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
-                ['sask', 'Saskatchewan', 'pic_Saskatchewan.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
-                ['yukon', 'Yukon', 'pic_Yukon.jpg', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.']
+                ['alberta', 'Alberta', '1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
+                ['bc', 'British Columbia', '2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
+                ['manitoba', 'Manitoba', '3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
+                ['nb', 'New Brunswick', '4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
+                ['nfl', 'Newfoundland and Labrador', '5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
+                ['nt', 'Northwest Territories', '6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
+                ['ns', 'Nova Scotia', '7 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
+                ['nunavut', 'Nunavut', '8 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
+                ['ontario', 'Ontario', '9 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
+                ['pei', 'Prince Edward Island', '10 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
+                ['quebec', 'Quebec', '11 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
+                ['sask', 'Saskatchewan', '12 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.'],
+                ['yukon', 'Yukon', '12 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enixercitation.']
             ];
+		let image_table =
+	       [
+	            ['alberta', 'pic_alberta_1.jpg'],
+				['alberta', 'pic_alberta_2.jpg'],
+				['bc', 'pic_BC_1.jpg'],
+				['bc', 'pic_BC_2.jpg'],
+				['manitoba', 'pic_Manitoba_1.jpg'],
+				['manitoba', 'pic_Manitoba_2.jpg'],
+				['nb', 'pic_NewBruswick_1.jpg'],
+				['nb', 'pic_NewBruswick_2.jpg'],
+				['nfl', 'pic_NewfoundLand_1.jpg'],
+				['nfl', 'pic_NewfoundLand_2.jpg'],
+				['nfl', 'pic_NewfoundLand_3.jpg'],
+				['nt', 'pic_NT_1.jpg'],
+				['nt', 'pic_NT_2.jpg'],
+				['ns', 'pic_NovaScotia_1.jpg'],
+				['ns', 'pic_NovaScotia_2.jpg'],
+				['ns', 'pic_NovaScotia_3.jpg'],
+				['nunavut', 'pic_Nunavut_1.jpg'],
+				['nunavut', 'pic_Nunavut_2.jpg'],
+				['ontario', 'pic_Ontario_1.jpg'],
+				['ontario', 'pic_Ontario_2.jpg'],
+				['pei', 'pic_PEI_1.jpg'],
+				['pei', 'pic_PEI_2.jpg'],
+				['quebec', 'pic_Quebec_1.jpg'],
+				['quebec', 'pic_Quebec_2.jpg'],
+				['sask', 'pic_Saskatchewan_1.jpg'],
+				['sask', 'pic_Saskatchewan_2.jpg'],
+				['sask', 'pic_Saskatchewan_3.jpg'],
+				['yukon', 'pic_Yukon_1.jpg'],
+				['yukon', 'pic_Yukon_2.jpg']
+		   ];            
+            
 
         function show_location(location_name) {
             mapinfo_photo_obj = document.getElementById("photo-frame");
@@ -1855,25 +2209,31 @@
             for (i = 0; i < info_table.length; i++) {
                 ary_code = info_table[i][0]; // code
                 ary_name = info_table[i][1]; // name
-                ary_image = info_table[i][2]; // image file
-                ary_description = info_table[i][3]; // description
+                ary_description = info_table[i][2]; // description
                 // alert(ary_code + " " + location_name);
-                if (ary_code == location_name) {
+                if (ary_code == location_name) 
+                {
                     mapinfo_label_obj.innerHTML = ary_name;
-                    //mapinfo_remark_obj.innerHTML = "assets/images/" + ary_image;
-                    mapinfo_photo_obj.src = "assets/images/" + ary_image;
+                    // mapinfo_remark_obj.innerHTML = image_location + ary_image;
+                    // mapinfo_photo_obj.src = "assets/images/" + ary_image;
                     // alert("assets/images/" + ary_image);
-                    //alert("found");
+                    // alert("found");
                     mapinfo_remark_obj.innerHTML = ary_description;
 
                     current_location_id = i;
+                    
                 }
             }
+            
+            // setup image carousel
+			final_html = get_html_carousel(location_name);
+			c_obj = document.getElementById("image_carousel");
+			c_obj.innerHTML = final_html;           
         }
 
         function show_location_by_id(id)
         {
-            // console.log(id);
+        	location_code = info_table[id][0];
             show_location(info_table[id][0]);
         }
 
@@ -1894,7 +2254,109 @@
 
             return false;
         }
+        
+        function preload_image(img_url)
+        {
+        	let img = new Image();
+  			img.src = img_url;
+        }
+        
+        function preload_images()
+        {
+        	for (i = 0; i < image_table.length; i++) 
+        	{
+        	 	let ary_image = image_table[i][1]; // image file
+        	 	let image_url = image_location + ary_image;
+        	 	preload_image(image_url);
+        	}
+        }
+        
+        function return_css_control(img_link)
+		{
+			str = "display:block;opacity:1;";
+			return str;
+		}
 
+		function return_css_slide(img_link)
+		{
+			// str = "transition:opacity 0.5s,transform 0.5s;top:0;left:0;right:0;opacity:1;transform: scale(1);";
+	  		str = "background-image: url('"+img_link+"');background-size: cover;background-position: center;";
+	  		return str;
+		}
+
+		function return_css_indicator(img_link)
+		{
+			str = "background-position:center;";
+			return str;
+		}
+
+		function get_html_carousel(location_str)
+		{
+			final_ary = [];
+			for (i=0; i< image_table.length; i++)
+			{
+				code = image_table[i][0]; // code
+				image_link = image_table[i][1]; // image_link
+				if (code==location_str) final_ary.push(image_link);
+			}
+
+			ary_count = final_ary.length;
+			if (final_ary.length == 0)
+			{
+				console.log("Location Code not found...");
+				return "";
+			}
+			
+			html = "";
+			for (i=0; i< final_ary.length; i++)
+			{
+				id_str = i+1;
+				html += "<input class='carousel__activator' type='radio' name='carousel' id='car_img_"+id_str+"'"
+				if (i==0) html += " checked='checked'";
+				html += "/>";
+			}
+
+			for (i=0; i< final_ary.length; i++)
+			{
+				id_str = i+1;
+				// if (i==0) html += "checked='checked'";
+				prev_id_str = id_str - 1;
+				next_id_str = id_str + 1;
+				
+				if (prev_id_str<1) prev_id_str = final_ary.length;
+				if (next_id_str>final_ary.length) next_id_str = 1;
+				
+				html += "<div class='carousel__controls'>";
+				html += "<label class='carousel__control carousel__control--backward' for='car_img_"+prev_id_str+"' style=\""+return_css_control(prev_id_str)+"\"></label>";
+				html += "<label class='carousel__control carousel__control--forward' for='car_img_"+next_id_str+"' style=\""+return_css_control(next_id_str)+"\"></label>";
+				html += "</div>";
+			}
+
+	      	html += "<div class='carousel__track'>";
+	      	for (i=0; i< final_ary.length; i++)
+			{
+				id_str = i+1;
+				image_link = "assets/images/"+final_ary[i];
+				html += "<li class='carousel__slide' style=\""+return_css_slide(image_link)+"\">";
+				// html += "<h1>"+id_str+"</h1>";
+				html += "</li>";
+			}
+			html += "</div>";
+
+			html += "<div class='carousel__indicators'>";
+	      	for (i=0; i< final_ary.length; i++)
+			{
+				id_str = i+1;
+				html += "<label class='carousel__indicator' for='car_img_"+id_str+"' style=\""+return_css_indicator(id_str)+"\"></label>";
+			}
+			html += "</div>";
+			
+			
+			
+			return html;
+		}        
+
+		preload_images();
         show_location("nunavut");
     </script>
 </body>
